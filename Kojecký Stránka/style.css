@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+
+.container {
+    padding: 20px;
+    flex: 1;
+}
+
+
+.section {
+    display: none;
+}
+
+
+.active {
+    display: block;
+}
+
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.footer-name {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.footer-email {
+    font-size: 1rem;
+    margin: 5px 0 0;
+}
+.home-image img {   
+    width: 40%;
+    border-radius: 30px;
+    height: auto;
+    margin-top: 50px;
+ }  
+ .home-image {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 20px;
+
+}

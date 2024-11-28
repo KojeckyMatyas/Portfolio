@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webová stránka</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('home')">Domovská stránka</a>
+        <a href="javascript:void(0)" onclick="showSection('projects')">Projekty</a>
+        <a href="javascript:void(0)" onclick="showSection('contact')">Kontakty</a>
+    </nav>
+
+    <div class="container">
+        <!-- Domovská stránka rozdělena na dvě části -->
+        <div id="home" class="section active">
+            <div class="home-content">
+                <div class="home-image">
+                    <img src="https://skolabaltaci.edupage.org/elearning/ruqjzfpvimg?z%3AxKGZUZen0L4XU7kXbBTbhO8zPKg8wAn%2BcKW708sXyKkCJrSybbOl8e93usiAl1d%2F" alt="Fotka" /> <!-- Můžete zde nahradit odkaz na svou fotku -->
+                </div>
+                <div class="home-text">
+                    <h1>Moje domovská stránka</h1>
+                    <p>Vítejte na mé domovské stránce! Najdete zde mou práci i projekty.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="section">
+            <h1>Naše projekty</h1>
+            <ul>
+                <a href="https://kojecky-visitka.funsite.cz/ " 
+                <li>Projekt 1: Webová vistika </li>
+            </a>
+            </ul>
+        </div>
+
+        <div id="contact" class="section">
+            <h1>Kontaktní informace</h1>
+            <p>Email: matyaskojecky@gmail.com</p>
+            <p>Telefon: +420 737 559 372</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-name">Matyáš Kojecký</p>
+        <p class="footer-email">matyaskojecky@gmail.com</p>
+    </div>
+
+    <script>
+        function showSection(section) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(sec) {
+                sec.classList.remove('active');
+            });
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+</body>
+</html>
